@@ -1,0 +1,33 @@
+@charset "UTF-8";
+ 
+
+body {
+background-color: #d6fde9;
+    font-size: 16px ;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#principal {
+text-align: center;
+background-color: #3c805e;
+color:white;
+
+}
+h2{
+color: #3c805e ;
+
+}
+
+.secundario{
+background-color: black;
+text-align: center;
+color: white;
+
+}
+
+#Lembrete {
+
+    background-color: white;
+
+}

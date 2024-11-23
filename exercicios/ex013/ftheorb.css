@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*
+body {
+background-color: rgb(255, 255, 255) ;
+color: rgb(0, 0, 0);
+
+}
+h1 {
+ text-align: center ;
+font-family: 'Times New Roman', Times, serif;
+text-shadow: blueviolet;
+color: rgb(255, 241, 241);
+
+}h2{
+
+color: rgb(255, 230, 230);
+
+}
+p{
+
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+justify-self: unset;
+
+
+}
+ul{
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+text-align: center;
+}
+main {
+background-color: rgb(78, 67, 78);
+border-radius: 20px;
+box-shadow: 7px ;
+text-align: center;
+
+
+}

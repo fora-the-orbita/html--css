@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>UNITEL Money - Pagamentos Móveis"</title>
+    <meta name="title" content="UNITEL Money, serviço de pagamentos móveis">
+    <meta name="description" content="UNITEL Money, serviço de pagamentos móveis">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" sizes="57x57" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="preload" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/css/app.css" as="style">
+    <link rel="preload" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/css/momo.css" as="style">
+    <link rel="preload" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/js/app.js" as="script">
+    <link rel="preload" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/fonts/intro_black-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/fonts/intro_bold-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/fonts/intro_book-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/fonts/intro_light-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/fonts/intro_regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/fonts/intro_thin-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/fonts/unitel.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/css/app.css" >
+    <link rel="stylesheet" href="https://unitelmoney.ao/wp-content/themes/unitel/assets/css/jquery.modal.min.css" >
+  
+    <style>
+      .icon-arrow-left {
+        color: white !important;
+      }
+
+      .icon-arrow-right {
+        color: white !important;
+      }
+      
+      div.blocker {
+        z-index: 99999;
+      }
+      .header__menu__dropdown {
+      top: 65%;
+      }
+      .page__header {
+      margin-top: 170px;
+      }
+      .upload-file__label {
+      font-size: 12px !important;
+      font-weight: 100 !important;
+      }
+      textarea {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      }
+
+      input.error {
+        border: solid 3px #ff0000 !important;
+      }
+      
+      div.error {
+        border: solid 3px #ff0000 !important;
+      }
+
+      input.valid {
+          border: solid 3px #0d832a !important;
+      }
+      div.valid {
+          border: solid 3px #0d832a !important;
+      }
+
+      textarea.error {
+          border: solid 3px #ff0000 !important;
+      }
+
+      textarea.valid {
+          border: solid 3px #0d832a !important;
+      }
+
+      .header__nav__container {
+        display: none !important;
+      }
+
+      .module_image_text_fullwidth__subtitle {
+        color: #fff  !important;
+        font-weight: bolder;
+      }
+      .module_header_carousel__title, .module_header_carousel__text {
+        color: #fff !important;
+      }
+     
+      @media screen and (max-width: 991px) {
+        .header__menu__dropdown {
+        left: -8% !important;
+      }
+      .page__header {
+      margin-top: 50px !important;
+      }
+      .header__nav__container {
+        display: block !important;
+      }
+    }
+
+    select {
+      width: 100%;
+      font-size: 1rem;
+      height: 100%;
+      color: #545454;
+      border: none;
+      outline: none;
+      padding: 20px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: #efefef;
+      transition: background-color .3s ease;  
+    }
+
+    select + i {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%) rotate(90deg);
+      font-size: 1.1875rem;
+      color: #5c0f8b;
+      pointer-events: none;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+    .unitel-form fieldset .upload-file__label {
+      width: calc(100% - 130px) !important;
+    }
+    @media screen and (min-width: 768px) {
+        .unitel-form fieldset .upload-file__label {
+        width: calc(100% - 330px) !important;
+      }
+    }
+
+    #tarifario-content h1, #tarifario-content h2 {
+      color: #f16223 !important;
+    }
+
+    #tarifario-content h1 {
+      text-align: center;
+    }
+
+    #tarifario-content table {
+      width: 100%;
+    }
+
+    #tarifario-content td p {
+      text-align: center;
+    }
+
+      .module_orange-bar__item {
+          padding-top: 10px;
+          padding-bottom: 10px;
+      }
+
+
+    </style>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <header class="header" id="js-header">
+      <div class="container-fluid container-fluid--big">
+        <div class="row">
+          <div class="col-2">
+            <a class="brand" href="/">
+            <span class="sr-only">Unitel</span>
+            <img class="header__logo" 
+              src="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/Logos/logo-header.svg" alt="Unitel">
+            </a>
+          </div>
+          <div class="col-10 col-lg-8 d-flex justify-content-between align-items-center">
+            <div class="header__menu">
+              <div class="header__menu__dropdown">
+                <a class="header__menu__btn" href="#" role="button" id="dropdownMenuLink" aria-haspopup="true"
+                  aria-expanded="false" aria-controls="header__menu__list" data-toggle-class="opened">
+                Menu
+                </a>
+                <ul id="header__menu__list" class="header__menu__list" aria-labelledby="dropdownMenuLink">
+                  <!-- Adicionar a classe .selected na li do site seleccionado  -->
+                  <li class="header__menu__item selected">
+                    <a href="/" class="header__menu__link">
+                    Início</a>
+                  </li>
+                  <li class="header__menu__item ">
+                    <a href="/quem-somos" class="header__menu__link ">
+                    Quem Somos</a>
+                  </li>
+                  <li class="header__menu__item ">
+                    <a href="/carteira" class="header__menu__link">
+                    Carteira Unitel Money</a>
+                  </li>
+                  <li class="header__menu__item ">
+                    <a href="/parceiros" class="header__menu__link ">
+                    Parceiros</a>
+                  </li>
+
+                  
+                  <li class="header__menu__item ">
+                    <a href="/onde-estamos" class="header__menu__link ">
+                    Onde Estamos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__menu__mobile d-lg-none d-flex flex-row-reverse">
+              <button class="header__btn header__btn__hamburger hamburger--squeeze " type="button"
+                aria-expanded="false" aria-controls="js-nav_menu" data-toggle-class="opened">
+              <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+              </span>
+              <span class="sr-only">Menu Unitel</span>
+              </button>
+             
+            </div>
+
+            <nav id="js-nav_menu" class="header__nav__container">
+    <!-- Adicionar a classe .selected na li do site seleccionado  -->
+    <!-- Adicionar a classe .menu-item-has-children no caso de haver submenu do item  -->
+    <ul class="header__nav">
+       <li class="menu-item">
+            <a href="#">Vantagens</a>
+        </li>
+    </ul>
+</nav>          </div>
+        </div>
+      </div>
+    </header>
+        <div class="page page-homepage site-particulares">
+        <div class="page__header">
+            <div>
+                <div class="mt-40">
+                    <!-- MODULE IMAGE MAP  -->
+                    <div class="module module_image_map overflow-hidden">
+                    </div>
+                </div>
+                <!-- END: MODULE IMAGE MAP  -->
+            </div>a
+        </div>
+    </div>
+    <div class="page__content">
+        <div class="page__content space--pt-30-75 space--pb-30-60">
+            <div class="container-fluid container-fluid--normal">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Actualização das Condições Gerais de Acesso ao Serviço de Pagamentos Móveis  (alteração parcial das Cláusulas 1, 5 e 11)</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-40">
+                <div class="container-fluid container-fluid--normal">
+                    <div class="row justify-content-center mb-50">
+                        <div class="col-12">
+                                                        <p class=><p>&nbsp;</p>
+<p>A <strong>UNITEL </strong><strong>–</strong><strong> SERVI</strong><strong>Ç</strong><strong>OS DE PAGAMENTOS M</strong><strong>Ó</strong><strong>VEIS, (SU), S.A</strong>., informa a todos os seus clientes que irá actualizar as condições gerais do serviço de pagamentos móveis, por si prestado.</p>
+<p>A alteração entrará em vigor as <strong>00h:00 do dia 01 de Junho de 2024</strong>.</p>
+<p>Se pretender continuar a utilizar o serviço Unitel Money, o Cliente não necessita de tomar nenhuma acção. Caso não concorde com a actualização aos Termos e Condições, o cliente poderá rescindir o contrato, sem qualquer penalização, até 30 (trinta) dias após a entrada em vigor.</p>
+<p>O Cliente poderá consultar as novas condições gerais em anexo, disponíveis também em qualquer canal Money , na App Unitel Money e no site www.unitelmoney.ao, que pode ser acedido gratuitamente através da rede Unitel.</p>
+<p>Continuar a utilizar o serviço, após o prazo de rescisão acima previsto, determina a aceitação das novas condições gerais de utilização do mesmo.</p>
+<p>Para mais esclarecimentos, a UNITEL SPM tem ainda disponível a sua linha de apoio através do número <strong>923 180 449.</strong></p>
+<p>Termos e Condições</p>
+<p>&nbsp;</p>
+<ol>
+<li><strong> Âmbito e Objecto</strong></li>
+</ol>
+<p>&nbsp;</p>
+<ol>
+<li>Os termos e condições (“Condições do Serviço”) destinam-se a regular o acesso e utilização do Serviço de Pagamento (“Serviço”) prestado pela UNITEL – SERVIÇOS DE PAGAMENTOS MÓVEIS, (SU), S.A., com sede em Luanda, no edifício Unitel, sito na rua Kwamme N’Krumah, n.º 53A, 4º andar, distrito urbano da Ingombota, município de Luanda, província de Luanda, titular do NIF 5000528293, matriculada na Conservatória do Registo Comercial de Luanda – 2.ª Secção do Guiché Único, sob o n.º 2.076-20/200720, com o capital social de Kz. 250.000.000,00 (duzentos cinquenta milhões de kwanzas), (adiante abreviadamente “Unitel SPM”).</li>
+<li>Ao efectuar o registo como cliente do Serviço aceita e concorda em cumprir com estas condições. Assim, deverá ler e compreender estas Condições do Serviço e se não concordar com as mesmas, não deverá prosseguir com a subscrição/utilização do Serviço.</li>
+<li>Em caso de dúvida sobre as Condições do Serviço, o cliente deverá parar o processo de registo e contactar o serviço de apoio ao Cliente da Unitel SPM através do número 923180449 para obter o esclarecimento pretendido. Caso o Cliente não se sinta esclarecido não deverá prosseguir com a subscrição/utilização do Serviço.</li>
+<li>A abertura de uma conta de pagamentos é antecedida da realização de registo do Cliente (<em>KYC</em>) na base de dados / plataforma da Unitel SPM. Com o registo realizado é permitido ao Cliente a realização de operações de depósito, levantamento, transferências para outras contas de pagamentos, bem como pagamentos de produtos e serviços, além das operações de gestão da respectiva Conta de Pagamento.</li>
+<li>A utilização dos Serviços pressupõe a aceitação pelo Cliente das presentes Condições Gerais dos Serviços.</li>
+<li>O Unitel Money permite ao Cliente efectuar transacções a crédito e a débito na sua Conta de Pagamento, as quais são sempre efectuadas por instrução de transferência autorizada com o PIN definido pelo Cliente.</li>
+<li>A Conta de Pagamento do Cliente é creditada quando adquirir dinheiro electrónico, ou seja, fazendo um pagamento em numerário directamente a um Agente em troca de uma quantia equivalente em dinheiro electrónico que será creditado na Conta de Pagamento (depósito).</li>
+<li>O Cliente apenas pode efectuar depósitos ou levantamentos relativos à sua Conta de Pagamento e mediante confirmação de um PIN.</li>
+<li>A Conta de Pagamento do Cliente é debitada quando (i) o Cliente troca dinheiro electrónico por numerário em qualquer Agente da Unitel SPM (Levantamento); (ii) o Cliente transfere dinheiro electrónico para outro Cliente; (iii) o Cliente faz um pagamento ou adquire um bem e/ou serviço junto de qualquer Parceiro ou Comerciante Unitel Money.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>2. Definições</strong></p>
+<ol>
+<li>No presente Contrato, sempre que iniciados por letra maiúscula, e salvo quando do contexto claramente decorrer sentido diferente, as palavras e expressões terão o significado que se lhes segue:
+<ol>
+<li>“<strong>Agente</strong>” significa qualquer pessoa singular ou colectiva autorizada pela Unitel SPM para prestação dos Serviços de Pagamento.</li>
+<li><strong>“Aplicação Unitel Money”</strong>ou “App” é aplicação da Unitel SPM disponível para telemóveis com sistema operativo android ou iOS que permite ao Cliente utilizar os serviços de pagamento.</li>
+<li><strong>“Apoio ao Cliente”</strong>é serviço de suporte que a Unitel SPM oferece aos seus clientes, seja antes, durante ou depois da compra, e que os ajuda a ter uma excelente experiência com o serviço. O Cliente poderá utilizar o número 923180449</li>
+<li><strong>“Bens e Serviços”</strong>significa os bens e serviços que podem ser comprados de Retalhistas autorizados usando o Unitel Money.</li>
+<li><strong>“BNA”</strong>significa o Banco Nacional de Angola.</li>
+<li><strong>“Cartão SIM no estado activo”</strong>significa o cartão de telemóvel da rede UNITEL que, de acordo com o ciclo de vida definido pelo operador, esteja em condições de receber e realizar chamadas.</li>
+<li><strong>“Conta de pagamento”</strong>: entende-se como a conta detida pelo Cliente junto da Unitel SPM por um utilizador de serviços de pagamento, utilizada para a execução de operações de pagamento.</li>
+<li><strong>“Conta de Pagamento Nível 1”</strong>: entende-se como a conta Cliente, podendo ser criada de modo digital, que será movimentada na execução de operações de pagamento do serviço Unitel Money, devendo obedecer os limites estabelecidos no n.º 9.2. da clausula 9. A informação obrigatória para a criação desta conta é o género, número de telemóvel, data de nascimento e nacionalidade.</li>
+<li><strong>“Conta de Pagamento Nível 2”</strong>: entende-se como a conta Cliente, criada de modo presencial, que será movimentada na execução de operações de pagamento do serviço Unitel Money, devendo obedecer os limites estabelecidos no n.º 9.3. da clausula 9. A informação obrigatória para a criação desta conta é o nome, endereço, data nascimento, nacionalidade, e número de telemóvel, estado civil, filiação e profissão.</li>
+<li><strong>“Conta de Pagamento Nível 3”</strong>: entende-se como a conta Cliente, criada de modo presencial, movimentada na execução de operações de pagamento do serviço Unitel Money, devendo obedecer os limites estabelecidos no n.º 9.4. da clausula 9. A informação obrigatória para a criação desta conta é o nome, endereço, data de nascimento, género, nacionalidade, e número de telemóvel, estado civil, filiação e profissão. Para a abertura desta conta o Cliente poderá também apresentar o cartão de eleitor, documento com foto de uma instituição credível (igreja, centro de refugiados, comissão do bairro etc.).</li>
+<li><strong>“</strong><strong>Conta de Pagamento Nível 4”</strong>: entende-se como a conta Cliente, criada de modo presencial, movimentada na execução de operações de pagamento do serviço Unitel Money, devendo obedecer os limites estabelecidos no n.º 9.5. da Clausula 9. A informação obrigatória para a criação desta conta é o nome, endereço, data de nascimento, género, nacionalidade, número de telemóvel, estado civil, filiação e profissão. O Cliente poderá também apresentar o bilhete de identidade, passaporte e carta de condução.</li>
+<li><strong>“Contrato”</strong>significa os presentes termos e condições, bem como quaisquer alterações ou modificações feitas posteriormente, por escrito.</li>
+<li><strong>“Depósito”</strong>significa operação no sistema de pagamentos que permite ao Cliente dispor de moeda electrónica na sua carteira, em troca de moeda escritural (<em>cash in</em>).</li>
+<li><strong>“Dinheiro electrónico”</strong>(e-money) significa a moeda electrónica emitida pela Unitel SPM e representando um direito a uma quantia equivalente em numerário, detido pelo Cliente na compra de tal valor electrónico.</li>
+<li><strong>“Encargos”</strong>significa as tarifas e outros encargos devidos nos termos deste Contrato para o Serviço Unitel Money.</li>
+<li><strong>“Equipamento Móvel”</strong>: significa o seu telemóvel e cartão SIM ou outro equipamento que, quando usado em conjunto, permite o acesso ao Serviço Unitel Money.</li>
+<li><strong>“Fraude”</strong>significa qualquer acto ardiloso, enganoso, de má-fé, com o intuito de lesar ou ludibriar outrem, ou de não cumprir determinado dever.</li>
+<li><strong>“Impostos/Taxas/Encargos”</strong>significa todos os impostos, nomeadamente o IVA, o imposto de selo, imposto industrial, imposto sobre os rendimentos do trabalho, bem como as contribuições para a segurança social e qualquer outro imposto, taxas e encargos aduaneiros e portuários devido no território da República de Angola, de acordo com as leis e regulamentos aplicáveis.</li>
+<li><strong>“Informação Confidencial”</strong>significa toda a informação escrita, verbal ou constante de suporte informático, que contenha dados de natureza organizativa, técnica, comercial, estratégica ou financeira, incluindo software, tecnologia, invenções, estudos, listas de clientes e fornecedores, know-how, segredos comerciais, informação sobre custos, lucros, vendas e preços, a propriedade intelectual das Partes e quaisquer ideias, processos, metodologias, processos e fórmulas ainda que não protegidos por direitos de propriedade intelectual, o presente Contrato e qualquer outra informação relativa à actividade de cada uma das Partes que seja transmitida por uma das Partes à outra ou que uma das Partes venha a ter conhecimento no âmbito da execução do Contrato, estejam ou não marcadas como confidencial, bem como a informação sujeita a segredo bancário, i.e., todas as informações sobre factos ou elementos respeitantes à actividade da Unitel SPM ou às relações desta ou do Cliente com os clientes, designadamente os nomes dos clientes, as contas de pagamento e seus movimentos, e outras operações de pagamento.</li>
+<li><strong>“Instruções de Transferência”</strong>: Significa instruções dadas através do menu USSD ou por via da Aplicação Unitel Money para transferência de dinheiro electrónico de um cliente para outro;</li>
+<li><strong>“IVR”</strong>(<em>Iteractive Voice Response</em>) é o canal usado para o apoio ao cliente de forma automatizada.</li>
+<li><strong><em>“Levantamento”</em></strong>significa operação no sistema de pagamentos que permite ao Cliente converter moeda electrónica que tenha na sua conta de pagamento em moeda escritural que lhe é entregue em mãos (<em>cash out</em>).</li>
+<li><strong>“Menu USSD”</strong>é o Menu que pode ser acedido através do telemóvel e que permite ao Cliente aceder a um menu de gestão de um determinado serviço, que disponibiliza diferentes opções com base numa interacção instantânea.</li>
+<li><strong>“MSISDN”</strong>: significa o número de identificação do cartão SIM atribuído ao Cliente pelo operador de telecomunicações e os correspondentes PIN e PUK para aceder à rede Unitel;</li>
+<li><strong>“Partes” </strong>significa a Unitel SPM e o Cliente, quando designados conjuntamente.</li>
+<li><strong>“Plataforma”</strong>significa o sistema utilizado para registar todas as operações que digam respeito aos Serviços;</li>
+<li><strong>“PIN”</strong>significa o número de identificação pessoal, código secreto que o cliente adoptar para aceder e operar a sua conta de pagamento;</li>
+<li><strong>“PIN Inicial”</strong>significa o código único de 4 dígitos enviado para o Cliente no registo, com a finalidade de activar a Conta de Pagamento;</li>
+<li><strong>“Provedor de Serviço de Rede/Operador de Telecomunicações:”</strong>significa o provedor de serviços de telefonia.</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><strong>“Serviços/Unitel Money”</strong>os serviços de pagamento prestados pela Unitel SPM no âmbito do presente Contrato, de depósito e levantamento de dinheiro electrónico, a transferência de dinheiro electrónico entre clientes com base nas suas instruções, pagamento de bens e/ou serviços, incluindo o registo de todas as suas transacções, sua verificação e actualização de registos da Conta de Pagamento.</li>
+</ul>
+<ol start="31">
+<li><strong>“STMI”</strong>significa o Sistema de Transferências Móveis e Instantâneas.</li>
+<li><strong>“SMS”</strong>(<em>short message service</em>) é um componente do serviço de mensagens de texto da maioria dos sistemas de telefone, Internet e dispositivos móveis.</li>
+<li><strong>“Unitel Money Website”</strong>: refere-se ao endereço <a href="http://www.unitelmoney.co.ao/">co.ao</a>.</li>
+<li><strong>“UNITEL, S.A.”</strong>é a sociedade comercial, com sede em Luanda, na Rua Kwamme N’Krumah, n.º 53A, Distrito Urbano da Ingombota, Município de Luanda, titular do NIF 5410003144, com o Capital Social de Kz. 148.456.224,00 (cento e quarenta e oito milhões, quatrocentos e cinquenta e seis mil, duzentos e vinte e quatro kwanzas), matriculada na Conservatória do Registo Comercial de Luanda, sob o n.º 44/1999.</li>
+<li><strong>“Unitel SPM”</strong>é a sociedade comercial, UNITEL, SERVIÇOS DE PAGAMENTOS MÓVEIS, (SU), S.A., com sede no edifício Unitel, sito na rua Kwamme N´Krumah, n.º 53A, 4º andar, distrito urbano da Ingombota, município de Luanda, província de Luanda, titular do NIF5000528293, matriculada na Conservatória do Registo Comercial de Luanda – 2.ª Secção do Guiché Único, sob o n.º 2.076-20/200720, com o capital social de Kz. 250.000.000,00 (duzentos cinquenta milhões de kwanzas) sendo esta a prestadora dos serviços de pagamento.</li>
+</ol>
+<ol start="2">
+<li>Os títulos das Cláusulas do presente Contrato são incluídos por razões de mera conveniência, não constituindo suporte da interpretação ou integração do mesmo.</li>
+<li>No presente Contrato, e salvo quando de outro modo indicado, as referências feitas a Cláusulas, números ou Anexos respeitam a Cláusulas, números ou Anexos deste Contrato.</li>
+<li>As expressões supra definidas no singular poderão ser utilizadas no plural, e vice-versa, com a correspondente alteração do respectivo significado.</li>
+<li>Salvo quando do contexto resulte de outro modo, qualquer referência feita neste Contrato a uma disposição legal ou contratual inclui as alterações a que a mesma tiver sido e/ou vier a ser sujeita.</li>
+</ol>
+<p><strong>3. Duração do Contrato e Denúncia</strong></p>
+<ol>
+<li>Sem prejuízo do disposto nos números seguintes, o presente Contrato entra em vigor na data de adesão aos Serviços pelo Cliente e vigora por tempo indeterminado.</li>
+<li>Para que não existam dúvidas, a activação do Serviço Unitel Money configura aceitação das Condições do mesmo.</li>
+<li>O Cliente pode, a qualquer momento, denunciar o Contrato, sem custos, desde que comunique à Unitel SPM, por escrito, com uma antecedência mínima de 15 (quinze) dias, em relação à data pretendida para a produção dos efeitos da denúncia. A denúncia ao Contrato faz-se mediante o preenchimento pelo Cliente do formulário de denúncia de contrato disponível na Aplicação Unitel Money, em qualquer Loja Unitel, no website da Unitel SPM e em qualquer Agente da Unitel SPM.</li>
+<li>A denúncia produzirá efeitos 15 dias após o preenchimento e envio do formulário previsto no número anterior, sem prejuízo da aplicação das regras e princípios do Contrato às operações executadas até ao último dia de vigência do Contrato.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>4. Equipamento em uso pelo Cliente</strong></p>
+<ol>
+<li>A utilização e a qualidade dos Serviços dependem do equipamento utilizado pelo Cliente para aceder ao Serviço, competindo-lhe certificar-se de que aquele é adequado para o efeito.</li>
+<li>A aquisição de todo o equipamento para acesso ao Serviço deve ser por conta do Cliente, o qual será igualmente responsável pela sua utilização e conservação.</li>
+<li>A Unitel SPM não se responsabiliza por qualquer tentativa de utilização do Serviço por um equipamento incompatível ou que não permita a sua correcta execução.</li>
+<li>O Cliente deverá manter o equipamento utilizado para aceder ao Serviço em condições de segurança, devendo nele instalar e manter actualizados os necessários mecanismos de segurança contra quaisquer tipos de ataque que possam facilitar o acesso ao Serviço, nomeadamente antivírus.</li>
+<li>Se se verificar que as perturbações na prestação do Serviço têm origem no equipamento do Cliente, deverá este promover as medidas necessárias para substituição ou reparação do referido equipamento.</li>
+<li>Constitui responsabilidade do Cliente assegurar que no seu equipamento não são instalados mecanismos fraudulentos que possam causar-lhe prejuízos, nomeadamente na utilização do Serviço.</li>
+<li>O Cliente obriga-se a informar imediatamente a Unitel SPM em caso de dano, perda, furto ou roubo do cartão SIM. A Unitel SPM desactivará a Conta de Pagamento de modos a prevenir eventual utilização indevida por terceiros. A notificação deverá ser feita para o Apoio ao Cliente através do número 923180449.</li>
+<li>O Cliente isenta a Unitel SPM de quaisquer reclamações e/ou indemnizações que tenham por base quaisquer transacções efectuadas com a sua Conta de Pagamento antes de a notificação prevista na cláusula 4.7 ser recebida.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>5. Uso do Serviço de Pagamento</strong></p>
+<ol>
+<li>Qualquer cliente da UNITEL, S.A. pode subscrever o Serviço Unitel Money, desde que tenha um cartão SIM activo.</li>
+<li>O Serviço Unitel Money é limitado a 5 (cinco) contas por Cliente, independentemente do número de cartões SIM que sejam detidos pelo Cliente.</li>
+<li>A subscrição ao Serviço Unitel Money está reservada a clientes com idade igual ou superior a 16 anos, sendo que até aos 18 anos apenas poderão ser titulares de conta de Nível 1, salvo se emancipados nos termos da lei.</li>
+<li>Os Clientes com idade entre os 14 e os 18 anos poderão subscrever o Serviço Unitel Money se exercerem actividade laboral autorizada nos termos estabelecidos na Lei Geral do Trabalho, devendo fazer provar desse facto. Os Clientes na situação prevista no presente número apenas poderão ser titulares de conta de Nível 2 salvo se fizerem prova que a sua remuneração é superior ao limite previsto para o nível em causa.</li>
+<li>O Cliente é responsável perante o Provedor de Serviço de Rede pelo pagamento e todos os custos de rede incorridos aquando da utilização do Serviço Unitel Money, incluindo aqueles que sejam deduzíveis directamente da sua Conta Unitel Money.</li>
+<li>Para o acesso ao Serviço o Cliente deverá criar uma Conta de Pagamento junto da Unitel SPM através do seu número de telemóvel, o qual fica associado de forma incindível ao Serviço.</li>
+<li>A criação da Conta de Pagamento é feita através (i) da Aplicação Unitel SPM, disponível para dispositivos <em>Android</em>e iOS; (ii) de estabelecimentos de Agentes da Unitel SPM; (iii) através de códigos USSD; em qualquer das opções referidas no presente número o Cliente deve ter o cartão SIM no estado activo.</li>
+<li>Aquando da subscrição do Serviço Unitel Money, o Cliente deverá fornecer as seguintes informações: (i) nome completo; (ii) género; (iii) data de nascimento; (iv) número do bilhete de identidade ou outro documento de identificação aceite pela Unitel SPM; (v) endereço; (vi) nacionalidade; (vii) número de telemóvel;</li>
+<li>É possível efectuar-se a subscrição do Serviço Unitel Money sem a informação referida no número anterior, no caso em que a Conta é obrigatoriamente de Nível 1.</li>
+<li>O Cliente com a conta de Nível 1, aberta nos termos do número anterior, poderá aderir ao serviço por um período de carência de 6 (seis) meses até entregar as informações solicitadas no ponto 5.8.</li>
+<li>Findo o prazo determinado no número imediatamente anterior, a conta de pagamento torna-se bloqueada ao nível do Sistema central do STMI até o titular proceder o registo, sob pena de cancelamento definitivo.</li>
+<li>A mudança para outros níveis de conta só é possível se o cliente fornecer as informações previstas na cláusula 5.8.</li>
+<li>Todas as informações fornecidas pelo Cliente devem ser completas e verdadeiras.</li>
+<li>A UNITEL SPM pode, a seu exclusivo critério, indeferir o pedido de subscrição do Cliente.</li>
+<li>A Unitel SPM pode recusar a abertura da conta se não estiver satisfeita com a informação fornecida e/ou prova da sua identidade.</li>
+<li>Para utilizar os Serviços, o Cliente aceita descarregar e obriga-se a instalar actualizações da aplicação Unitel SPM de forma automática ou manual.</li>
+<li>O Cliente reconhece que o acesso ao Serviço e a sua utilização são feitos com recurso a sistemas informáticos e redes de comunicações que podem apresentar falhas, defeitos ou erros de funcionamento ou concepção. Apesar de a Unitel SPM tentar assegurar o pleno uso do Serviço Unitel Money dentro da área de cobertura, a Unitel SPM não garante que o mesmo esteja disponível a todo o momento e não será responsabilizada por qualquer perda em consequência de qualquer indisponibilidade do Serviço Unitel Money por causa não imputável à Unitel SPM.</li>
+<li>O Serviço Unitel Money não está isento de deficiências e factores como (incluindo, mas não se limitando a) desastres naturais, topografia geográfica, condições meteorológicas, manutenção planificada ou trabalho de rectificação da rede, que podem interferir negativamente na qualidade e prestação do Serviço Unitel Money.</li>
+<li>A autenticação do Cliente na Aplicação Unitel Money ou por meio de código USSD é efectuada através de um PIN, definido pelo próprio Cliente e/ou dado biométrico, consoante a compatibilidade técnica do respectivo equipamento.</li>
+<li>Todas as transacções de débito na Conta de Pagamento serão efectuadas por instrução do Cliente autorizada com o PIN escolhido pelo próprio. A Unitel SPM poderá estabelecer métodos de autenticação e/ou validação de transacções diferentes.</li>
+<li>Todas as transacções na Conta de Pagamento são registadas através de SMS, sendo o registo do sistema Unitel Money considerado correcto, salvo se o contrário for provado. O Cliente aceita que o registo do sistema Unitel Money constitui comprovativo das transacções, pelo que deverá garantir que nenhuma transacção é realizada sem recebimento das notificações. Caso o Cliente não receba o comprovativo da operação, ou se a operação não reflectir por via de SMS, deverá de imediato reportar para o apoio ao cliente da Unitel SPM.</li>
+<li>Os Serviços não poderão ser utilizados para tentativa ou prática de actos ilícitos e constitutivos de responsabilidade civil ou penal, nem de forma geral, para actos contrários à lei, à ordem pública ou aos bons costumes.</li>
+<li>Em caso de suspeita de fraude a Unitel SPM poderá proceder à suspensão dos Serviços até que deixem de existir as razões que estiveram na base da suspensão.</li>
+<li>A suspensão é realizada com base em suspeição, não sendo necessária a existência de elementos que comprovem, bastando a existência de indícios ou sinais de fraudes.</li>
+<li>Após suspensão da Conta de Pagamento, cabe ao Cliente apresentar os elementos que comprovem a inexistência de fraude tendo em conta os indícios apresentados pela Unitel SPM.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>6. Tarifário e Pagamento</strong></p>
+<ol>
+<li>A tarifa devida pela prestação do Serviço será a resultante da aplicação do tarifário definido no presente Contrato (Anexo I).</li>
+<li>Todas as alterações do tarifário serão comunicadas pela Unitel SPM ao Cliente com um mínimo de 30 (Trinta) dias de antecedência em relação à data de entrada em vigor do novo tarifário.</li>
+<li>Caso o Cliente não concorde com as alterações comunicadas pela Unitel SPM, poderá denunciar o Contrato sem quaisquer encargos.</li>
+<li>A cessação do Contrato, ao abrigo do disposto no número anterior, não confere ao Cliente direito a qualquer indemnização.</li>
+<li>Decorrido o período de 30 (trinta) dias a que se refere o número 6.2. sem que a Unitel SPM tenha recebido comunicação do Cliente, no sentido de denunciar o Contrato, entrarão em vigor as alterações comunicadas ao mesmo, nos termos do número 6.2.</li>
+<li>A tarifa de cada operação será debitada directamente na Conta de Pagamento após a conclusão de cada operação.</li>
+<li>A tarifa inclui os impostos aplicáveis por lei.</li>
+<li>Não será permitido ao Cliente realizar qualquer transacção caso não tenha na sua Conta de Pagamento dinheiro electrónico suficiente para cobrir o valor da transacção e encargos aplicáveis (tarifa e impostos).</li>
+<li>O Cliente só tem direito a reembolso em caso de cessação do Contrato, sendo-lhe assegurado igual direito em caso de cessação de actividade por parte da Unitel SPM.</li>
+<li style="list-style-type: none;"></li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>7. Obrigações do Cliente</strong></p>
+<p>1. Sem prejuízo das demais obrigações previstas no presente Contrato, em especial o Cliente compromete-se a:<br />
+a. Fornecer informações e dados correctos, completos e exactos para efeitos de celebração e execução do presente Contrato;<br />
+b. Fornecer à Unitel SPM, sempre que esta lhe solicitar, quaisquer informações ou esclarecimentos, sobre qualquer aspecto relacionado com a execução do presente Contrato;<br />
+c. Não utilizar o Unitel Money para cometer qualquer infracção à lei de Angola;<br />
+d. Fornecer à Unitel SPM quaisquer informações ou esclarecimentos sobre todos os eventos que se lhe apresentem como relevantes à boa execução do presente Contrato.<br />
+2. O Cliente é responsável por todas as transacções ocorridas na sua Conta de Pagamento, ilibando, por isso, a Unitel SPM de quaisquer enganos, utilizações incorrectas, etc., que possam resultar dessas transacções.<br />
+3. O Cliente é também responsável pelas fraudes que sofrer resultantes da não observância das regras de segurança previstas nas presentes Condições relativamente à disponibilização do PIN a terceiros.</p>
+<p>&nbsp;</p>
+<p><strong>8. Obrigações da Unitel SPM</strong></p>
+<p>Sem prejuízo das demais obrigações previstas no presente Contrato, a Unitel SPM compromete-se a:</p>
+<p>1. Prestar o Serviço ao Cliente, nos termos contratualizados;<br />
+2. Respeitar os dados pessoais do Cliente;<br />
+3. Guardar confidencialidade.</p>
+<p><strong>9. Limites de Transacções</strong></p>
+<ol>
+<li>A utilização do Serviço Unitel Money está sujeita aos seguintes limites:</li>
+<li>Conta Nível 1: Limite por transacção de débito: Kz. 25.000,00; Limite diário de débito: Kz. 25.000,00; Limite mensal de débito: Kz. 35.000,00; Saldo máximo em Conta de Pagamento: Kz. 70.000,00</li>
+<li>Conta Nível 2: Limite por transacção de débito: Kz. 25.000,00; Limite diário de débito: Kz. 50.000,00; Limite mensal: Kz. 150.000,00; Saldo máximo: Kz. 900.000,00</li>
+<li>Conta Nível 3: Limite por transacção: Kz. 100.000,00; Limite diário: Kz. 200.000,00; Limite mensal: Kz. 1.600.000,00; Saldo máximo: Kz. 9.600.000,00</li>
+<li>Conta Nível 4: Limite por transacção de débito: Kz. 300.000,00; Limite diário de débito: Kz. 600.000,00; Limite mensal de débito: Kz. 3.000.000,00; Saldo máximo em Conta de Pagamento: Kz. 18.000.000,00</li>
+<li>Qualquer transacção que exceda os limites estabelecidos nos números anteriores não será processada.</li>
+<li>A Unitel SPM reserva-se no direito de alterar unilateralmente os limites estabelecidos na presente cláusula, caso em que comunicará ao Cliente com antecedência de 2 dias.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>10 Cessão Posição Contratual</strong></p>
+<p>As Partes não poderão ceder a sua posição contratual no presente Contrato, nem subcontratar a terceiros, total ou parcialmente, as suas obrigações no âmbito do presente Contrato, sem o prévio consentimento, por escrito, da outra Parte.</p>
+<p>&nbsp;</p>
+<p><strong>11. Tratamento de Dados e Comunicações Electrónicas</strong></p>
+<p>&nbsp;</p>
+<ol>
+<li>O CLIENTE autoriza, de forma expressa, livre, informada e inequívoca no acto de adesão aos serviços, a Unitel SPM a proceder o tratamento automatizado e o processamento de dados recolhidos no processo de abertura e manutenção da conta, para a execução e gestão do contrato, acções de marketing própria ou de qualquer entidade participada, e no âmbito da contratação de produtos e serviços.</li>
+<li>Para efeitos do previsto no número anterior e sem prejuízo dos dados que poderão ser adicionalmente solicitados pela UNITEL SPM, os dados pessoais sujeitos ao tratamento e fornecidos pelo CLIENTE poderão corresponder aos seguintes: nome completo do CLIENTE, data de nascimento, estado civil, endereço físico e de e-mail, número de telefone, IBAN, número do documento de identificação pessoal, nomeadamente Bilhete de Identidade, cartão de contribuinte (NIF), Passaporte ou Autorização de Residência, e Carta de Condução, ou outro, assim como cópia ou imagem do mesmo nos formatos suportados pelos sistemas de armazenamento de dados da UNITEL SPM.</li>
+<li>Os dados pessoais do Cliente recolhidos pela Unitel SPM são partilhados com a UNITEL, S.A. que actua em nome da Unitel SPM, funcionando a adesão aos Serviços como consentimento para o tratamento e partilha de dados.</li>
+<li>Os dados do Cliente poderão também ser partilhados com todas as entidades que intervenham no sistema financeiro nacional e internacional, de acordo com a operação desejada pelo Cliente, e nos termos da Lei, pelo que desde já este presta o seu consentimento expresso.</li>
+<li>Os dados pessoais e informações do Cliente podem ser partilhados com terceiros para ajudar a operacionalizar a abertura e gestão de contas, adesão e contratação de serviços e produtos, a execução de operações/transacções, a adesão e gestão de serviços relacionados com os canais digitais, bem como, para ajudar a operar, prestar, melhorar, compreender, personalizar, apoiar e publicitar o Serviço, permitindo prestar-lhe Serviços cada vez mais personalizados, consentindo desde já o Cliente, que seja contactado por ou em nome da Unitel SPM para a comercialização de novos produtos e serviços desta, bem como para a divulgação de Parceiros ou Comerciantes Money.</li>
+<li>O Cliente consente que os seus dados pessoais recolhidos sejam partilhados com terceiros que estejam envolvidos na execução dos Serviços por via de subcontratação pela Unitel SPM. Para este efeito os dados pessoais do Cliente poderão ser transferidos para outros territórios, obrigando-se a Unitel SPM a salvaguardar por escrito que a entidade que receba os dados pessoais cumpra o disposto na Lei da Protecção de Dados Pessoais.</li>
+<li>O Cliente autoriza que os seus dados pessoais sejam utilizados igualmente pela Unitel SPM para selecção e envio de publicidade orientada para o CLIENTE, podendo a qualquer momento, cancelar a recepção das mesmas, sem quaisquer custos, por meio de envio de mensagem para o número 19181, com o texto “Cancelar”.</li>
+<li>A UNITEL SPM procederá igualmente ao tratamento dos dados de transacções do CLIENTE e dados de tráfego, nomeadamente (a posição geográfica do equipamento móvel do CLIENTE, o número de série do telemóvel do CLIENTE, IMEI e demais registos de tráfego), para efeitos de facturação, assim como, para o exercício dos demais direitos e cumprimento de obrigações legais e contratuais decorrentes do contrato de Prestação de Serviços de Pagamento.</li>
+<li>A UNITEL SPM poderá comunicar os dados pessoais referidos nos números anteriores, assim como, os constantes das facturas emitidas por serviços prestados ao CLIENTE, e que se encontrem em dívida, a entidades que tenha contratado para proceder à cobrança do correspondente crédito, as quais apenas poderão tratar os dados correspondentes por conta da UNITEL SPM para os referidos fins de cobrança, enquanto Subcontratadas.</li>
+<li>As informações partilhadas são tratadas com base nas orientações da Unitel SPM.</li>
+<li>Nos termos da Lei, as autoridades competentes, devidamente mandatadas, poderão ter acesso aos dados do Cliente, tratados no âmbito do presente Contrato.</li>
+<li>O Cliente pode exercer os seus direitos previstos na Lei de Protecção de Dados Pessoais junto da Unitel SPM a qualquer momento, nomeadamente o direito de informação, acesso, oposição, e rectificação, actualização e eliminação dos seus dados pessoais, sem quaisquer custos, por meio do Serviço de Apoio ao Cliente.</li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>12. Reclamações</strong></p>
+<ol>
+<li>As eventuais reclamações que o Cliente pretenda formular serão feitas meio da Aplicação Unitel Money ou Menu USSD, podendo ainda dirigir-se a um Agente ou mediante correio electrónico, devidamente fundamentadas e acompanhadas de todos os elementos documentais de que o Cliente disponha e que sejam comprovativos do facto objecto da reclamação.</li>
+<li>A Unitel SPM envidará todos os esforços para responder, também em suporte duradouro (papel ou correio electrónico), às reclamações apresentadas pelo Cliente no mais curto prazo possível.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>13. Incumprimento Imputável ao Cliente</strong></p>
+<ol>
+<li>O incumprimento por parte do Cliente de qualquer das obrigações decorrentes do presente Contrato, constituirá também a Unitel SPM no direito de rescindir o presente Contrato, nos termos previstos na cláusula 15.</li>
+<li>A prestação de falsas declarações pelo Cliente, prévia ou posteriormente à celebração do presente Contrato, constituirá a Unitel SPM no direito de restringir, suspender ou rescindir o Contrato, mediante comunicação escrita.</li>
+<li>O levantamento da suspensão das restrições à utilização dos Serviços decorrentes do incumprimento do presente Contrato pelo Cliente ou a celebração de um novo Contrato com o Cliente relativamente ao qual tenha ocorrido a rescisão contratual por incumprimento, dependem do pagamento integral dos montantes em dívida e ainda de quaisquer eventuais taxas de levantamento de restrições e reactivação ou outros equivalentes que como tal se encontrem previstas no tarifário em vigor.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>14. Resolução pela Unitel SPM</strong></p>
+<ol>
+<li>A Unitel SPM poderá, a qualquer momento, resolver o presente contrato em caso de incumprimento ou cumprimento defeituoso pelo Cliente das obrigações no mesmo previstas ou impostas por Lei, mediante comunicação escrita enviada ao Cliente.</li>
+<li>A resolução do Contrato opera automaticamente na data de recepção da comunicação prevista no número anterior e importa a extinção imediata de quaisquer direitos ou obrigações assumidas pelas partes em data anterior à data da resolução.</li>
+<li>O direito de resolução do contrato pela Unitel SPM, não prejudica o direito a ser indemnizada pelos prejuízos causados pelo Cliente.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>15. Resolução por parte do Cliente</strong></p>
+<ol>
+<li>O Cliente poderá, a qualquer momento, resolver o contrato em caso de incumprimento ou cumprimento defeituoso pela Unitel SPM das obrigações no mesmo previsto, nos termos dos números seguintes.</li>
+<li>O Cliente deverá comunicar por escrito à Unitel SPM, com invocação dos respectivos fundamentos, que pretende resolver o contrato, conferindo-lhe um prazo não inferior a 15 (quinze) dias para pôr termo à situação de incumprimento ou de cumprimento defeituoso.</li>
+<li>Caso a Unitel SPM não venha a pôr termo à situação de incumprimento ou de cumprimento defeituoso no prazo que para o efeito lhe tenha sido concedido nos termos do número anterior, o Cliente poderá resolver o contrato, mediante comunicação escrita enviada à Unitel SPM.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>16. Normas de Conduta</strong></p>
+<ol>
+<li>O Cliente obriga-se a pautar a sua conduta de acordo com as normas legais aplicáveis, abstendo-se, nomeadamente, de adoptar comportamentos que, de alguma forma, lesem os interesses da Unitel SPM.</li>
+<li>Conforme assim resulta das disposições legais em vigor a Unitel SPM abster-se-á de executar ordens do Cliente e quaisquer pagamentos móveis caso haja suspeita de estarem relacionadas com a prática dos crimes de branqueamento de capitais, financiamento de terrorismo ou sujeitas a sanções internacionais.</li>
+<li>O Cliente reconhece e aceita que a suspeita, por parte da Unitel SPM, de uma tentativa ou de uma concreta realização de uma ou mais operações que possam configurar os crimes de branqueamento de capitais, financiamento de terrorismo ou violação de sanções internacionais implica para o Banco o dever de reportar a situação em causa às autoridades competentes, conferindo-lhe ainda à Unitel SPM o direito a resolver o presente Contrato, nos termos legais em vigor.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>17. Alterações</strong></p>
+<ol>
+<li>A Unitel SPM reserva-se no direito de alterar, a qualquer momento, de acordo com a lei vigente as presentes Condições. As alterações serão notificadas ao Cliente por SMS, pelo website, pela App ou por qualquer outro meio adequado.</li>
+<li>Ao continuar a usar o Unitel Money considera-se como tendo acordado com as alterações previstas no número anterior.</li>
+<li>Caso o Cliente não concorde com as alterações, não deverá continuar a efectuar transacções, caso contrário será considerado como tendo aceite tais alterações.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>18. Exclusão de Responsabilidade da Unitel SPM</strong></p>
+<ol>
+<li>A Unitel SPM não será responsável por quaisquer danos que o Cliente sofra em resultado directo ou indirecto, do incumprimento das obrigações que para ela decorram, salvo nos casos em que tais danos sejam resultantes de acto praticado com dolo ou culpa grave pelos seus representantes no cumprimento das suas obrigações.</li>
+<li>O Cliente toma ainda conhecimento de que à Unitel SPM não poderá ser imputada qualquer responsabilidade por danos resultantes da utilização dos Serviços, nomeadamente no caso em que se verifique alteração do conteúdo das ordens de pagamento por intervenção não autorizada de terceiros.</li>
+<li>De acordo com o possível e permitido por lei, a Unitel SPM exclui quaisquer garantias de todas as espécies, expressas ou implícitas.</li>
+<li>O Cliente reconhece e aceita que a prestação de serviços via telemática é um serviço que a Unitel SPM pode, caso assim o entenda, sem aviso prévio e a qualquer momento, suspender ou deixar de prestar.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>19. Força Maior</strong></p>
+<ol>
+<li>Qualquer das Partes ficará exonerada das obrigações contratuais sempre e na medida em que o cumprimento das obrigações resultantes deste Contrato seja condicionado por motivos de força maior.</li>
+<li>Entende-se por força maior, para efeitos do presente Contrato e sem que a enumeração seja taxativa, a ocorrência de guerras, rebeliões sociais, greves, catástrofes naturais, pandemias ou epidemias ou outros acontecimentos que as Partes não possam prevenir ou prever.</li>
+<li>Ocorrido o motivo de força maior a Parte por ele afectada deve dar conhecimento à outra Parte no prazo de 3 (três) dias, ficando suspensas as obrigações resultantes deste Contrato.</li>
+<li>Findo o motivo de força maior, a Parte por ele afectada deverá comunicar igualmente à outra Parte, por escrito, do termo de tal motivo, restabelecendo-se assim, na sua forma originária, salvo aquelas sujeitas a prazo, as obrigações do Contrato.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>20 . Lei Aplicável e Foro</strong></p>
+<ol>
+<li>O presente Contrato rege-se pela Lei angolana.</li>
+<li>As Partes procurarão resolver amigavelmente entre si qualquer questão ou conflito resultante da validade, eficácia, interpretação ou execução do presente Contrato.</li>
+<li>A Unitel SPM disponibilizará ao Cliente, sempre que possível, o acesso a um centro alternativo de resolução de conflitos de consumo que possuam pessoal especializado e primem pela conciliação e mediação.</li>
+<li>Não sendo possível a resolução dos conflitos por via amigável, as Partes designam como competente o Centro de Resolução Extrajudicial de Litígios, com renúncia expressa a qualquer outro foro.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>21. Comunicações</strong></p>
+<ol>
+<li>As comunicações para o Cliente a efectuar ao abrigo do presente Contrato serão efectuadas por escrito, mediante SMS ou email.</li>
+<li>As comunicações para a Unitel SPM a efectuar ao abrigo do presente Contrato serão efectuadas por escrito para a sede da sociedade sita no edifício UNITEL, sito na rua Kwamme N’Krumah, n.º 53A, 4º andar, distrito urbano da Ingombota, município de Luanda, província de Luanda.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>22. Suspensão dos Serviços</strong></p>
+<ol>
+<li>A Unitel SPM poderá suspender, restringir ou cancelar os Serviços, sem necessidade de informação prévia e sem qualquer responsabilidade, nas seguintes situações:</li>
+</ol>
+<ul>
+<li>Quando a Unitel SPM tomar conhecimento ou tiver motivos para suspeitar que o equipamento móvel, cartão SIM do Cliente ou a Conta de Pagamento estão a ser utilizados de forma ilícita, ilegal, indevida ou fraudulenta ou em actividades criminosas;</li>
+<li>Quando não cumpra qualquer regra prevista nas presentes Condições;</li>
+<li>Quando o Cliente não faça prova dos elementos usados para adesão aos Serviços no prazo de 48h;</li>
+<li>Quando o Cliente não apresente qualquer documento solicitado pela Unitel SPM no prazo de 72h;</li>
+<li>Quando o Cliente tenha utilizado os Serviços para operações suspeitas de branqueamento de capitais;</li>
+<li>Quando o Cliente não faça prova da origem dos fundos transaccionados, para efeitos do disposto na Lei sobre prevenção e combate ao branqueamento de capitais;</li>
+<li>Quando exista suspeita de fraude relacionada com a Conta de Pagamento do Cliente.</li>
+</ul>
+<p><strong>23. Limitação de Segurança</strong></p>
+<ol>
+<li>Por razões de segurança o Serviço fica indisponível nas seis horas seguintes à realização de uma segunda via ao número de telemóvel associado aos Serviços.</li>
+<li>O mecanismo previsto no número anterior destina-se a prevenir fraudes que tenham na base a realização de segunda via por terceiros com o objectivo de utilizar os Serviços de forma fraudulenta e em nome do Cliente.</li>
+<li>O Cliente poderá desactivar a limitação prevista na presente cláusula por meio dos serviços de apoio ao cliente.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>24. Disposições Finais</strong></p>
+<ol>
+<li>O não exercício ou o exercício tardio e/ou parcial de qualquer direito que assista à Unitel SPM ao abrigo deste Contrato não importa a renúncia a esse direito, nem impede o seu exercício posterior.</li>
+<li>No caso de qualquer disposição do presente Contrato ser declarada nula ou vir a ser anulada, tal não afectará as demais disposições do mesmo, nem afectará a validade do Contrato que se considerará automaticamente reduzido nos termos do disposto no Código Civil angolano, salvo se se demonstrar que as Partes o não teriam celebrado se tivessem previsto tal invalidade.</li>
+</ol>
+<p>&nbsp;</p>
+<p>Anexo I</p>
+<p><strong>Tarifário</strong></p>
+<p><strong> </strong></p>
+<p><a name="_Toc156315079"></a>Tarifário Clientes UNITEL Money</p>
+<p><a name="_Toc156315080"></a>Depositar Dinheiro*</p>
+<p>*Tarifa aplicável apenas para o depósito nas Lojas UNITEL e Agente UNITEL Money</p>
+<table border="1" width="100%">
+<tbody>
+<tr>
+<td width="398">Valor (KZ)</td>
+<td width="405">Tarifa (KZ)</td>
+</tr>
+<tr>
+<td width="398">50,00 – 300.000</td>
+<td width="405">Grátis</td>
+</tr>
+</tbody>
+</table>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><a name="_Toc156315081"></a>Transferências de Dinheiro</p>
+<p>Podem ser feitas transferências de dinheiro para clientes com ou sem registo UNITEL Money, e aplicadas as taxas que seguem.</p>
+<p><strong> </strong></p>
+<p><a name="_Toc156315082"></a>Transferir Dinheiro para Cliente UNITEL Mone</p>
+<table border="1" width="100%">
+<tbody>
+<tr>
+<td colspan="2" width="520">Valor (KZ)</td>
+<td width="271">Tarifa (KZ)</td>
+</tr>
+<tr>
+<td width="248">De</td>
+<td width="272">Até</td>
+<td width="271">Custo c/ IVA</td>
+</tr>
+<tr>
+<td width="248">50</td>
+<td width="272">500</td>
+<td width="271">15</td>
+</tr>
+<tr>
+<td width="248">501</td>
+<td width="272">1 000</td>
+<td width="271">15</td>
+</tr>
+<tr>
+<td width="248">1 001</td>
+<td width="272">2 000</td>
+<td width="271">30</td>
+</tr>
+<tr>
+<td width="248">2 001</td>
+<td width="272">3 000</td>
+<td width="271">45</td>
+</tr>
+<tr>
+<td width="248">3 001</td>
+<td width="272">4 000</td>
+<td width="271">60</td>
+</tr>
+<tr>
+<td width="248">4 001</td>
+<td width="272">5 000</td>
+<td width="271">70</td>
+</tr>
+<tr>
+<td width="248">5 001</td>
+<td width="272">10 000</td>
+<td width="271">100</td>
+</tr>
+<tr>
+<td width="248">10 001</td>
+<td width="272">20 000</td>
+<td width="271">175</td>
+</tr>
+<tr>
+<td width="248">20 001</td>
+<td width="272">50 000</td>
+<td width="271">350</td>
+</tr>
+<tr>
+<td width="248">50 001</td>
+<td width="272">100 000</td>
+<td width="271">500</td>
+</tr>
+<tr>
+<td width="248">100 001</td>
+<td width="272">300 000</td>
+<td width="271">750</td>
+</tr>
+</tbody>
+</table>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><a name="_Toc156315083"></a>Transferir Dinheiro para Cliente Não Registado</p>
+<table border="1" width="100%">
+<tbody>
+<tr>
+<td colspan="2" width="519">Valor (KZ)</td>
+<td width="274">Tarifa (KZ)</td>
+</tr>
+<tr>
+<td width="248">De</td>
+<td width="272">Até</td>
+<td width="274">Custo c/ IVA</td>
+</tr>
+<tr>
+<td width="248">50</td>
+<td width="272">500</td>
+<td width="274">30</td>
+</tr>
+<tr>
+<td width="248">501</td>
+<td width="272">1 000</td>
+<td width="274">30</td>
+</tr>
+<tr>
+<td width="248">1 001</td>
+<td width="272">2 000</td>
+<td width="274">55</td>
+</tr>
+<tr>
+<td width="248">2 001</td>
+<td width="272">3 000</td>
+<td width="274">150</td>
+</tr>
+<tr>
+<td width="248">3 001</td>
+<td width="272">4 000</td>
+<td width="274">150</td>
+</tr>
+<tr>
+<td width="248">4 001</td>
+<td width="272">5 000</td>
+<td width="274">150</td>
+</tr>
+<tr>
+<td width="248">5 001</td>
+<td width="272">10 000</td>
+<td width="274">250</td>
+</tr>
+<tr>
+<td width="248">10 001</td>
+<td width="272">15 000</td>
+<td width="274">300</td>
+</tr>
+<tr>
+<td width="248">15 001</td>
+<td width="272">20 000</td>
+<td width="274">350</td>
+</tr>
+<tr>
+<td width="248">20 001</td>
+<td width="272">50 000</td>
+<td width="274">700</td>
+</tr>
+<tr>
+<td width="248">50 001</td>
+<td width="272">100 000</td>
+<td width="274">1 250</td>
+</tr>
+<tr>
+<td width="248">100 001</td>
+<td width="272">300 000</td>
+<td width="274">2 500</td>
+</tr>
+</tbody>
+</table>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><a name="_Toc156315084"></a>Levantar Dinheiro</p>
+<p><a name="_Toc156315085"></a>Levantar Dinheiro no Agente &#8211; Cliente Registado UNITEL Money*</p>
+<p>*Tarifa aplicável apenas para o levantamento nas Lojas UNITEL e Agente UNITEL Money.</p>
+<table border="1" width="100%">
+<tbody>
+<tr>
+<td colspan="2" width="531">Valor (KZ)</td>
+<td width="261">Tarifa (KZ)</td>
+</tr>
+<tr>
+<td width="264">De</td>
+<td width="267">Até</td>
+<td width="261">Custo c/ IVA</td>
+</tr>
+<tr>
+<td width="264">50</td>
+<td width="267">500</td>
+<td width="261">30</td>
+</tr>
+<tr>
+<td width="264">501</td>
+<td width="267">1 000</td>
+<td width="261">30</td>
+</tr>
+<tr>
+<td width="264">1 001</td>
+<td width="267">2 000</td>
+<td width="261">55</td>
+</tr>
+<tr>
+<td width="264">2 001</td>
+<td width="267">3 000</td>
+<td width="261">90</td>
+</tr>
+<tr>
+<td width="264">3 001</td>
+<td width="267">4 000</td>
+<td width="261">90</td>
+</tr>
+<tr>
+<td width="264">4 001</td>
+<td width="267">5 000</td>
+<td width="261">190</td>
+</tr>
+<tr>
+<td width="264">5 001</td>
+<td width="267">10 000</td>
+<td width="261">190</td>
+</tr>
+<tr>
+<td width="264">10 001</td>
+<td width="267">15 000</td>
+<td width="261">290</td>
+</tr>
+<tr>
+<td width="264">15 001</td>
+<td width="267">20 000</td>
+<td width="261">350</td>
+</tr>
+<tr>
+<td width="264">20 001</td>
+<td width="267">50 000</td>
+<td width="261">700</td>
+</tr>
+<tr>
+<td width="264">50 001</td>
+<td width="267">100 000</td>
+<td width="261">1 250</td>
+</tr>
+<tr>
+<td width="264">100 001</td>
+<td width="267">300 000</td>
+<td width="261">&#8212;</td>
+</tr>
+</tbody>
+</table>
+<p><strong> </strong></p>
+<p><a name="_Toc156315086"></a>Levantar Dinheiro no Agente &#8211; Cliente Não Registado UNITEL Money</p>
+<table border="1" width="100%">
+<tbody>
+<tr>
+<td width="413">Valor (KZ)</td>
+<td width="390">Tarifa (KZ)</td>
+</tr>
+<tr>
+<td width="413">50,00 – 100.000</td>
+<td width="390">Grátis</td>
+</tr>
+</tbody>
+</table>
+<p><strong>      </strong></p>
+<p><a name="_Toc156315088"></a>Pagamentos</p>
+<table border="1" width="100%">
+<tbody>
+<tr>
+<td width="414">Valor (KZ)</td>
+<td width="390">Tarifa (KZ)</td>
+</tr>
+<tr>
+<td width="414">50,00 – 300.000</td>
+<td width="390">Grátis</td>
+</tr>
+</tbody>
+</table>
+<p><strong> </strong></p>
+<p><a name="_Toc156315089"></a>Outras Transacções Clientes</p>
+<table border="1" width="100%">
+<tbody>
+<tr>
+<td width="531">Tipo de Transacção</td>
+<td width="263">Taxa (KZ)</td>
+</tr>
+<tr>
+<td width="531">Reversão de transacções de dinheiro por erro do cliente</td>
+<td width="263">Grátis</td>
+</tr>
+<tr>
+<td width="531">Cancelamento Conta UNITEL Money</td>
+<td width="263">Grátis</td>
+</tr>
+<tr>
+<td width="531">Consultar Saldo UNITEL Money</td>
+<td width="263">Grátis</td>
+</tr>
+<tr>
+<td width="531">Alterar o PIN UNITEL Money</td>
+<td width="263">Grátis</td>
+</tr>
+<tr>
+<td width="531">Alterar Idioma</td>
+<td width="263">Grátis</td>
+</tr>
+<tr>
+<td width="531">Linha do Cliente 923180449</td>
+<td width="263">Grátis</td>
+</tr>
+</tbody>
+</table>
+<p><strong> </strong></p>
+</p>
+                            <!-- INICIO -->
+                                                        <!-- FIM
+
+                            <div>
+                                <div class="page container-fluid container-fluid--normal">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h2 class="my-40">LEIA, POR FAVOR, ATENTAMENTE OS TERMOS E CONDIÇÕES ABAIXO. AO PARTICIPAR DESTA CAMPANHA, ACEITA E COMPROMETE-SE A CUMPRIR COM OS PRESENTES TERMOS ECONDIÇÕES</h2>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="py-20"></div>
+                                            <ol>
+                                                <li>ORGANIZADOR E OBJETIVO</li>
+                                                <li>
+                                                    Enquanto empresa
+                                                    <ol>
+                                                        <li>teste</li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                            <div class="py-20"></div>
+                                            <ul class="list-bullet">
+                                                <li>Enquanto empresa</li>
+                                                <li>Enquanto empresa</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+-->
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+<footer class="footer footer--v2">
+      <div class="container-fluid container-fluid--normal">
+        <div class="row">
+          <div class="col-12">
+            <div class="row justify-content-center">
+              <div class="col-12 col-xl-10">
+                <div class="row">
+                  <div class="col-12 col-sm-7 col-md-12 col-xl-9">
+                    <div class="footer__nav">
+                      <ul class="footer__menus">
+                        <li class="text-center text-sm-left">
+                          <span class="type--17 type--black c-orange">Início</span>
+                          <ul>
+                            <li>
+                              <a href="/#vantagens" class="type--14 type--medium c-orange">Vantagens</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="text-center text-sm-left">
+                          <span class="type--17 type--black c-orange">Carteira Unitel Money</span>
+                          <ul>
+                            <li>
+                              <a href="/carteira/#carteira" class="type--14 type--medium c-orange">Tarifário</a>
+                            </li>
+                            <li>
+                              <a href="/carteira/#carteira" class="type--14 type--medium c-orange">Como proteger a tua carteira?</a>
+                            </li>
+                            <li>
+                              <a href="/carteira/#carteira" class="type--14 type--medium c-orange">Como transferir dinheiro?</a>
+                            </li>
+                            <li>
+                              <a href="/carteira/#carteira" class="type--14 type--medium c-orange">Como pagar serviços?</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="text-center text-sm-left">
+                          <span class="type--17 type--black c-orange">Parceiros</span>
+                          <ul>
+                            <li>
+                              <a href="/parceiros" class="type--14 type--medium c-orange">Inscreve-te</a>
+                            </li>
+                          </ul>
+                          <span class="type--17 type--black mt-20 d-block c-orange">Quem Somos</span>
+                          <ul>
+                            <li>
+                              <a href="/quem-somos/noticias/" class="type--14 type--medium c-orange">Notícias</a>
+                            </li>
+                            <li>
+                              <a href="/quem-somos/#documentos" class="type--14 type--medium c-orange">Documentos</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="text-center text-sm-left">
+                          <span class="type--17 type--black c-orange">Onde Estamos</span>
+                          <ul>
+                            <li>
+                              <a href="/onde-estamos/lojas/" class="type--14 type--medium c-orange">Lojas e Agentes</a>
+                            </li>
+                            <li>
+                              <a href="/onde-estamos/#falaconnosco" class="type--14 type--medium c-orange">Contactos</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-5 col-md-12 col-xl-3 align-self-xl-center">
+                    <div class="footer__social-wrap">
+                      <div class="footer__logo text-center text-md-center text-xl-right ">
+                        <img src="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/Logos/logo-footer.svg"  alt="Unitel">
+
+                          <a href="https://apps.apple.com/us/app/unitel-money/id1565214980"><img style="width: 105px;height: 35px" src="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/momo/svg/appstore.svg"  alt="Appstore"></a>
+                          <a href="https://play.google.com/store/apps/details?id=cn.tydic.unitelPay"><img style="width: 105px;height: 35px" src="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/momo/svg/googleplay.svg"  alt="Googleplay"></a>
+                          <a href="https://appgallery.cloud.huawei.com/ag/n/app/C105042735?locale=en_US&source=appshare&subsource=C105042735&shareTo=com.google.android.gm&shareFrom=appmarket"><img style="width: 105px;height: 35px" src="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/momo/svg/huawei.svg"  alt="Huawei"></a>
+                          <a href="https://apps.samsung.com/appquery/appDetail.as?appId=cn.tydic.unitelPay"><img style="width: 105px;height: 35px" src="https://unitelmoney.ao/wp-content/themes/unitel/assets/img/momo/svg/samsung.svg"  alt="Samsung"></a>
+
+                      </div>
+                      <div class="footer__social">
+                        <ul class="footer__social__wrap d-flex justify-content-center">
+                        <li>
+                            <a href="https://www.instagram.com/unitelmoney/" target="_blank" title="Instagram">
+                            <span class="sr-only">instagram</span>
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://web.facebook.com/UnitelMoneyAngola" target="_blank" title="Facebook">
+                            <span class="sr-only">Facebook</span>
+                            <i class="icon icon-facebook"></i>
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="https://www.youtube.com/channel/UCsVQoqwaffr9BFG-Wr_8-Nw" target="_blank" title="Youtube">
+                            <span class="sr-only">Youtube</span>
+                            <i class="icon icon-youtube"></i>
+                            </a>
+                          </li>
+
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__nav-terms">
+          <div class="row justify-content-center mx-0">
+            <div class="col-12 col-xl-10 px-0">
+              <div class="d-md-flex justify-content-md-between">
+                <div class="footer__nav-terms__copyright text-center text-sm-left">
+                  <span>Copyright © Unitel Money. 2021. Unitel Money é uma marca da UNITEL SPM.</span>
+                </div>
+
+                <ul class="footer__nav-terms__terms text-center text-sm-left">
+                    <p class="c-white">Termos e Condições</p>
+                  <li>
+                    <a href="/termos-e-condicoes" class="type--12">Clientes</a>
+                  </li>
+                    <li>
+                    <a href="/termos-e-condicoes-dos-parceiros" class="type--12">Parceiros</a>
+                  </li>
+                <li>
+                    <a href="/termos-e-condicoes-das-campanhas" class="type--12">Campanhas</a>
+                  </li>
+                  <li>
+                    <a href="/politica-de-privacidade" class="type--12">Privacidade</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="submitPartnerModal" class="modal">
+      <p>Pedido em curso. Por favor aguarde</p>
+    </div>
+    <div id="submitContactModal" class="modal">
+      <p>Pedido em curso. Por favor aguarde.</p>
+    </div>
+    <script>
+      var player_js_uri = "https://unitelmoney.ao/wp-content/themes/unitel/assets/js/player.js";
+      var player_css_uri = "https://unitelmoney.ao/wp-content/themes/unitel/assets/css/player.css";
+    </script>
+    <script src="https://unitelmoney.ao/wp-content/themes/unitel/assets/js/app.js"> </script>
+    <script src="https://unitelmoney.ao/wp-content/themes/unitel/assets/js/jquery-1.12.3.min.js"> </script>
+    <script src="https://unitelmoney.ao/wp-content/themes/unitel/assets/js/jquery.validate.min.js"> </script>
+    <script src="https://unitelmoney.ao/wp-content/themes/unitel/assets/js/additional-methods.js"> </script>
+    <script src="https://unitelmoney.ao/wp-content/themes/unitel/assets/js/sweetalert2.js"> </script>
+    <script src="https://unitelmoney.ao/wp-content/themes/unitel/assets/js/jquery.modal.min.js"> </script>
+    <script src="https://unitelmoney.ao/wp-content/themes/unitel/assets/js/forms.js"> </script>
+    <script src="https://unitelmoney.ao/wp-content/themes/unitel/assets/js/selectFilter.min.js"> </script>
+    <script src="https://kit.fontawesome.com/e7d0f5bb5e.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>

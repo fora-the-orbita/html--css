@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+</head>
+<style>
+
+@font-face {
+        font-family:'Black Berry';
+        src: url(Berkahi\ Blackletter.otf) format('open type'), url(Berkahi\ Blackletter.ttf) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+    body{
+
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:whitesmoke;
+    }
+
+    h1{
+        font-family: 'Black Berry';
+    }
+    header{
+
+        width: 600px;
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        margin: auto;
+        text-align: center;
+
+    }
+    main {
+
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    nav {
+        text-decoration: none;
+        padding: 3px;
+        box-shadow: 1px 1px 1px  whitesmoke;
+        
+    }
+
+    nav > a {
+
+        text-decoration: none;
+        font-weight: bold;
+        padding: 3px;
+        font-family: sans-serif;
+        border-radius: 10px;
+        box-shadow:1px 1px 1px 1px white;
+        
+        
+    }
+    nav>  a:hover{
+        text-decoration: underline;
+    }
+
+    footer{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 1px;
+        font-size: 20px;
+    }
+
+    article{
+        background-color: beige;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: inset;
+        }
+    article > aside {
+       font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    h2{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: medium;
+        
+    }
+
+    #bola
+        {
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            border-radius: 50%;
+            box-shadow: inset 10px 10px 10px 20px rgba(218, 121, 209, 0.459);
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-25px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        
+
+    }
+</style>
+<body>
+    <header>
+
+<h1>FTHEORB</h1>
+
+    <nav>
+        <a href="#">Artistas</a>
+        <a href="#">Booking</a>
+        <a href="#">Clothing</a>
+        <a href="#"> Shows</a>
+        <a href="#">Shop </a>
+
+        </nav>
+            </header>
+
+         <main>
+        
+    <section id="assuntos">
+
+    </section>
+
+        <section id="noticias">
+
+        <article>
+        <h2>   Noticias Sobre Angola</h2>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ducimus consectetur enim vitae unde eius! Tempora velit, <br>
+     vero optio perferendis
+     modi ipsam officiis, quod commodi eos soluta cupiditate iure distinctio?</p>
+
+    <aside>
+        <p> Escrito pot Tanzy Beatch</p>
+    </aside>
+        </article>
+
+    </section>
+    
+        </main>
+
+         <footer>
+
+            
+        <p>FORA THE ÓRBITA</p>
+         </footer>
+         <div id="bola"></div>
+</body>
+</html>
